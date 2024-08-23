@@ -6,15 +6,16 @@
 
     /* Container for Title and League List */
     .league-container {
-      max-width: 800px; 
-      margin: 20px auto;
+      width: 100%;
+      max-width: 1200px; 
+      margin: 10px auto;
       padding: 0;
       position: relative;
     }
 
     /* Styles for Title */
     .league-title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       color: #ffffff; 
       text-align: center;
