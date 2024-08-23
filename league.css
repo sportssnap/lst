@@ -1,0 +1,93 @@
+/* General Reset */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container for Title and League List */
+    .league-container {
+      max-width: 800px; 
+      margin: 20px auto;
+      padding: 0;
+      position: relative;
+    }
+
+    /* Styles for Title */
+    .league-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff; 
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+      background-color: #007bff; 
+      border-radius: 8px 8px 0 0;
+    }
+
+    /* Styles for League List Container */
+    .league-list-container {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 0 8px 8px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      position: relative;
+      overflow: hidden; 
+    }
+
+    .league-list-container::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5px; 
+      background-color: #007bff; 
+      border-radius: 0 0 8px 8px; 
+    }
+
+    .leagues-list {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .league-item {
+      display: block;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      padding: 0; 
+    }
+
+    .league-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .league-item img {
+      display: block;
+      margin: 0 auto;
+      width: 50px;  
+      height: 50px;
+      border: none;
+      box-shadow: none; 
+      transition: transform 0.3s;
+    }
+
+    .league-item a:hover img {
+      transform: scale(1.1);
+    }
+
+    .league-item a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .league-item a:hover {
+      color: #007bff;
+    }
